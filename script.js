@@ -12,7 +12,7 @@ const taskList = document.getElementById('task-list');
             let listItem =document.createElement('li');
             let Button= document.createElement('button');
             Button.innerHTML='Remove';
-            Button.setAttribute('class','remove-btn');
+            Button.classList.add('remove-btn');
             Button.addEventListener('click', function(){
                 listItem.remove();
                 listItem.appendChild('remove-btn');
